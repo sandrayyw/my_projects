@@ -1,0 +1,153 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Wang | Student Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        width: 100vw; 
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        max-width: 950px;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .grid-item {
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .full-width {
+        grid-column: span 2; 
+    }
+    ul {
+        padding-left: 20px;
+    }
+    a {
+        color: #0073e6;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 800px) {
+        .main-grid {
+            grid-template-columns: 1fr; 
+        }
+        .full-width {
+            grid-column: span 1;
+        }
+    }
+
+    @media (max-width: 767px) {
+        body {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .container {
+            padding: 15px;
+        }
+        .main-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .full-width {
+            grid-column: span 1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>Sandra Wang</h1>
+            <p style="text-align: center;">
+                <a href="mailto:yunyuwan@usc.edu">yunyuwan@usc.edu</a>
+            </p>
+        </div>
+
+        <div class="main-grid">
+            <div class="grid-item">
+                <h2>About Me</h2>
+                <p><strong>Favorite color:</strong> Black</p>
+                <p><strong>Favorite website:</strong> <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                <p><strong>Favorite activity:</strong></p>
+                <img src="https://cdn.outsideonline.com/wp-content/uploads/migrated-images_parent/migrated-images_79/ski-or-snowboard-fitness_h.jpg" 
+                     alt="Favorite Activity">
+            </div>
+
+            <div class="grid-item">
+                <h2>Spring 2025 Classes</h2>
+                <ul>
+                    <li>ITP104: Introduction to Website Development</li>
+                    <li>PSYC336: Developmental Psychology </li>
+                    <li>BUAD310: Applied Business Statistics</li>
+                    <li>ASTR200: Life in the Universe</li>
+                    <li>ITP310: Design for User Experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-item full-width">
+            <h2>Completed Assignments</h2>
+            <ul>
+                <li><a href="assignment_01/resume.html">Assignment 1: Resume</a></li>
+                <li><a href="assignment_02/interest_page.html">Assignment 2: Interest Page</a></li>
+                <li><a href="assignment_03/two_column.html">Assignment 3: Two Column Interests Page</a></li>
+                <li><a href="assignment_04/calendar.html">Assignment 4: Calendar</a></li>
+                <li><a href="assignment_05/home.html">Assignment 5: Image Gallery Page Layout</a></li>
+                <li><a href="assignment_06/home.html">Assignment 6: Image Gallery Captions</a></li>
+                <li><a href="assignment_07/proposal.html">Assignment 7: Final Project Proposal</a></li>
+                <li><a href="assignment_08/homepage.html">Assignment 8: Final Project Homepage</a></li>
+                <li><a href="assignment_09/homepage.html">Assignment 9: Final Project Second Page</a></li>
+                <li><a href="final_project/homepage.html">Final Project</a></li>
+                <li><a href="final_project/summary.html">Project Summary</a></li>
+            </ul>
+            <h2>Completed Labs</h2>
+            <ul>
+                <li><a href="index.html">Lab 2: Student Page</a></li>
+                <li><a href="lab_03/resume.html">Lab 3: Update Resume</a></li>
+                <li><a href="index.html">Lab 4: Student Page Layout</a></li>
+                <li><a href="lab_05/form_page.html">Lab 5: Form Page</a></li>
+                <li><a href="lab_06/photo_gallery.html">Lab 6: Photo Gallery</a></li>
+                <li><a href="lab_07/image_puzzle.html">Lab 7: Image Puzzle</a></li>
+                <li><a href="index.html">Lab 8: Responsive Student Page Layout</a></li>
+                <li><a href="lab_09/landing_page.html">Lab 9: Landing Page</a></li>
+                <li><a href="lab_10/index.html">Lab 10: CSS Effects</a></li>
+                <li><a href="lab_11/draggability.html">Lab 11: Draggability</a></li>
+                <li><a href="lab_12/index.html">Lab 12: jQuery</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
