@@ -1,0 +1,189 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip Book</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body class="light-mode">
+  <main>
+    <input type="checkbox" id="cover_checkbox">
+    <input type="checkbox" id="page1_checkbox">
+    <input type="checkbox" id="page2_checkbox">
+    <input type="checkbox" id="page3_checkbox">
+    <input type="checkbox" id="page4_checkbox">
+    <input type="checkbox" id="page5_checkbox">
+
+    <div id="flip_book">
+      <!-- COVER (2-sided) -->
+      <div class="front_cover">
+        <div class="cover_front" aria-hidden="true"></div>
+        <div class="cover_inside" aria-hidden="true"></div>
+        <label for="cover_checkbox" id="cover" aria-label="Open cover"></label>
+      </div>
+
+      <!-- PAGE 1 -->
+      <div class="page" id="page1">
+        <div class="front_page artistic_page">
+          <label for="page1_checkbox" aria-label="Flip page 1"></label>
+
+          <div class="travel_layout">
+            <div class="photo_frame">
+              <img src="./images/disney2.jpg" alt="Travel memory">
+            </div>
+
+            <p class="travel_caption">
+              i love traveling with you even if it's somewhere dull <br>
+              <span>u make life fun</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="back_page artistic_page">
+          <label for="page1_checkbox" aria-label="Flip page 1 back"></label>
+
+          <div class="travel_layout">
+            <div class="photo_frame">
+              <img src="./images/rave.jpg" alt="Rave memory">
+            </div>
+
+            <p class="travel_caption">
+              i love experiencing new things with you <br>
+              <span>you make life so much more entertaining!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 2 -->
+      <div class="page" id="page2">
+        <div class="front_page artistic_page">
+          <label for="page2_checkbox" aria-label="Flip page 2"></label>
+
+          <div class="travel_layout">
+            <div class="photo_frame">
+              <img src="./images/movie.JPG" alt="Comfort memory">
+            </div>
+
+            <p class="travel_caption">
+              i like it when u comfort me <br>
+              and tell me everything’s going to work out <br>
+              <span>i feel safe in your arms</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="back_page artistic_page">
+          <label for="page2_checkbox" aria-label="Flip page 2 back"></label>
+
+          <div class="travel_layout">
+            <div class="photo_frame">
+              <img src="./images/lights.jpg" alt="Long distance memory">
+            </div>
+
+            <p class="travel_caption">
+              there're so many more things i wanna do with you <br>
+              long distance rlly sucks, but all i can think of is <br>
+              <span>how happy I would be when I'm with u</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 3 -->
+      <div class="page" id="page3">
+        <div class="front_page artistic_page">
+          <label for="page3_checkbox" aria-label="Flip page 3"></label>
+
+          <div class="travel_layout">
+            <div class="photo_frame">
+              <img src="./images/friends.JPG" alt="Vibes check memory">
+            </div>
+
+            <p class="travel_caption">
+              my mom always tells me to only date someone <br>
+              who has a lot of friends… <br>
+              <span>so i guess u passed the vibes check?</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="back_page artistic_page">
+          <label for="page3_checkbox" aria-label="Flip page 3 back"></label>
+
+          <div class="travel_layout">
+            <div class="photo_grid">
+              <div class="photo_frame small"><img src="./images/food.jpg" alt=""></div>
+              <div class="photo_frame small"><img src="./images/food1.jpg" alt=""></div>
+              <div class="photo_frame small"><img src="./images/food2.jpg" alt=""></div>
+              <div class="photo_frame small"><img src="./images/food3.jpg" alt=""></div>
+            </div>
+
+            <p class="travel_caption">
+              we share the same love for food <br>
+              whenever i taste something good… <br>
+              <span>i always think of you</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 4 -->
+      <div class="page" id="page4">
+        <div class="front_page artistic_page">
+          <label for="page4_checkbox" aria-label="Flip page 4"></label>
+
+          <div class="travel_layout">
+            <p class="travel_caption">
+              since we can't spend this special day together… <br>
+              i have curated a special menu for you <br>
+              <span>hope u enjoy!!</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="back_page">
+          <label for="page4_checkbox" aria-label="Flip page 4 back"></label>
+
+          <div class="menu_page">
+            <h1>Today's Menu</h1>
+
+            <div class="menu_item">
+              <h2>Appetiser</h2>
+              <p>Wasabi Octopus</p>
+            </div>
+
+            <div class="menu_item">
+              <h2>Main</h2>
+              <p>Unagi Don</p>
+            </div>
+
+            <div class="menu_item">
+              <h2>Dessert</h2>
+              <p>Matcha Warabi Mochi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK COVER -->
+      <div class="back_cover"></div>
+    </div>
+
+    <button id="toggle-mode-btn" aria-label="Toggle mode">
+      <i class="bi bi-moon-stars-fill"></i>
+    </button>
+
+    <div id="responsive-warning">
+      <p>This web application is not optimized for mobile.</p>
+      <p>Please visit it on a desktop computer for the best experience.</p>
+    </div>
+  </main>
+</body>
+</html>
